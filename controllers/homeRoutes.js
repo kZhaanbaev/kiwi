@@ -52,4 +52,45 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/departments/Games', async (req, res) => {
+  res.render('Games');
+  // try {
+  //       //add code to direct to departments page
+
+  // } catch (err) {
+  //   res.status(500).json(err);
+  // }
+});
+
+
+router.get('/departments/Music', async (req, res) => {
+  res.render('Music');
+  // try {
+  //       //add code to direct to departments page
+
+  // } catch (err) {
+  //   res.status(500).json(err);
+  // }
+});
+
+router.get('/departments/Books', async (req, res) => {
+  res.render('Books');
+  // try {
+  //       //add code to direct to departments page
+
+  // } catch (err) {
+  //   res.status(500).json(err);
+  // }
+});
+
+router.get('/departments/Toys', async (req, res) => {
+  res.render('Toys');
+  // try {
+  //       //add code to direct to departments page
+
+  // } catch (err) {
+  //   res.status(500).json(err);
+  // }
+});
+
 module.exports = router;
