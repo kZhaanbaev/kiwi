@@ -1,5 +1,5 @@
 {
-  "name": "kiwi",
+  "name": "mvc-tech-blog",
   "version": "1.0.0",
   "description": "E-commerce application where people can buy or sell products.",
   "main": "server.js",
@@ -12,10 +12,11 @@
     "url": "git+https://github.com/kZhaanbaev/kiwi.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Maria J. Guerrero",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "bootstrap": "^5.0.1",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
