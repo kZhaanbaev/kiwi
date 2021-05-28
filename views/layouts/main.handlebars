@@ -1,0 +1,54 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<h1>Hello World!</h1>
+</body>
+
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiwi!</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        Welcome to Kiwi!
+      </h1>
+      <nav>
+        <a href="">Home</a>
+        <a href="/departments">Departments</a>
+        <a href="/cart">Cart</a>
+        <a href="">Login</a>
+      </nav>
+    </header>
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      <a href="/departments">Departments</a>
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus bibendum. Ut eu tincidunt elit. Nullam porta ultrices bibendum. Donec feugiat pulvinar ligula, nec tincidunt mi dignissim non.</p>
+    </footer>
+  </div>
+
+ 
+</body>
+
+</html>

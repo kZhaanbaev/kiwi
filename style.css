@@ -8,23 +8,23 @@ h4 {
 }
 
 .subnav-hero-section {
-    text-align: center;
-    background: #1779ba;
+    text-align: right;
+    background: #7e17ba;
     background-size: cover;
     position: relative;
     overflow: visible;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 300px;
+    -webkit-align-items: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-justify-content: right;
+        -ms-flex-pack: right;
+            justify-content: space-between;
+    height: 200px;
 }
-  
+
 .subnav-hero-section .subnav-hero-headline {
     color: #fefefe;
 }
