@@ -15,7 +15,7 @@ DepartmentItem.init(
             type: DataTypes.INTEGER,
             reference: {
                 model: 'item',
-                key: 'item_id',
+                key: 'id',
                 unique: false
             }
         },
@@ -23,7 +23,7 @@ DepartmentItem.init(
             type: DataTypes.INTEGER,
             reference: {
                 model: 'department',
-                key: 'department_id',
+                key: 'id',
                 unique: false
             }
         }
