@@ -2,14 +2,14 @@ const sequelize = require('../config/connection');
 const seedBuyers = require('./buyerData');
 const seedItems = require('./itemsData');
 const seedDepartments = require('./departmentData');
-const seedDepartmentItem = require('./departmentItemData');
+const seedBuyerItem = require('./buyerItemData');
 
 const seedAll = async () => {
     await sequelize.sync({force: true});
-    await seedBuyers();
     await seedDepartments();
+    await seedBuyers();
     await seedItems();
-    await seedDepartmentItem();
+    await seedBuyerItem();
     process.exit(0);
 }
 

@@ -1,29 +1,33 @@
 const Buyer = require('./Buyer');
 const Item = require('./Item');
 const Department = require('./Department');
-const DepartmentItem = require('./DepartmentItem');
-const sequelize = require('../config/connection');
+const BuyerItem = require('./BuyerItem');
 
-Buyer.hasMany(Item, {
+Department.hasMany(Item, {
+    foreignKey: 'department_id'
+});
+
+Item.belongsTo(Department, {
+    foreignKey: 'department_id'
+});
+
+Item.belongsToMany(Buyer, {
+    through: {
+        model: BuyerItem,
+        unique: false
+    },
+    as: 'item_buyer',
     foreignKey: 'buyer_id'
 });
 
-Item.belongsTo(Buyer, {
+Buyer.belongsToMany(Item, {
+    through: {
+        model: BuyerItem,
+        unique: false
+    },
+    as: 'buyer_item',
     foreignKey: 'buyer_id'
 });
 
-Item.belongsToMany(Department, {
-    through: DepartmentItem,
-    as: 'departments',
-    foreignKey: 'id'
-});
 
-Department.belongsToMany(Item, {
-    through: DepartmentItem,
-    as: 'items',
-    foreignKey: 'id'
-});
-
-
-
-module.exports = {Buyer, Item, Department, DepartmentItem};
+module.exports = { Buyer, Item, Department, BuyerItem };
