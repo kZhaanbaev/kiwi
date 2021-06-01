@@ -56,8 +56,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/departments/Games', async (req, res) => {
-  res.render('Games');
+router.get('/games', async (req, res) => {
+  res.render('games');
   // try {
   //       //add code to direct to departments page
 
@@ -67,8 +67,8 @@ router.get('/departments/Games', async (req, res) => {
 });
 
 
-router.get('/departments/Music', async (req, res) => {
-  res.render('Music');
+router.get('/music', async (req, res) => {
+  res.render('music');
   // try {
   //       //add code to direct to departments page
 
@@ -77,8 +77,8 @@ router.get('/departments/Music', async (req, res) => {
   // }
 });
 
-router.get('/departments/Books', async (req, res) => {
-  res.render('Books');
+router.get('/books', async (req, res) => {
+  res.render('books');
   // try {
   //       //add code to direct to departments page
 
@@ -87,8 +87,8 @@ router.get('/departments/Books', async (req, res) => {
   // }
 });
 
-router.get('/departments/Toys', async (req, res) => {
-  res.render('Toys');
+router.get('/toys', async (req, res) => {
+  res.render('toys');
   // try {
   //       //add code to direct to departments page
 

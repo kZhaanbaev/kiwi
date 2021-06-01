@@ -1,54 +1,42 @@
-{{!--
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
-</head>
-
-<body>
-  <h1>Hello World!</h1>
-</body>
-
-</html> --}}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kiwi!</title>
-  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        Welcome to Kiwi!
-      </h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/departments">Departments</a>
-        <a href="/cart">Cart</a>
-        <a href="/login">Login</a>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"   aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/departments">Departments</a>
+            <a class="nav-item nav-link active" href="/cart">Cart</a>
+            <a class="nav-item nav-link active" href="/login">Login</a>
+          </div>
+        </div>
       </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
+    </div>
+
+    <main class="container">
       {{{ body }}}
     </main>
-    <footer>
-      <a href="/departments">Departments</a>
+
+    <footer class="bg-primary text-white container text-center fixed-bottom">
+      <a class="text-white" href="/departments">Departments</a>
       <h3>About Us</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus bibendum. Ut eu tincidunt
         elit. Nullam porta ultrices bibendum. Donec feugiat pulvinar ligula, nec tincidunt mi dignissim non.</p>
     </footer>
-  </div>
 
 
 </body>
