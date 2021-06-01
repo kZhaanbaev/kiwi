@@ -36,14 +36,10 @@ Item.init(
     quantity: {
       type: DataTypes.INTEGER
     },
-    department: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    buyer_id: {
+    department_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'buyer',
+        model: 'department',
         key: 'id'
       }
     }
