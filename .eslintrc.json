@@ -6,6 +6,8 @@
       "node": true,
       "es6": true
     },
+    "plugins": ["babel"],
+    "parser": "babel-eslint",
     "rules": {
       "no-duplicate-case": "error",
       "no-empty": "error",
