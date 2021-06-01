@@ -3,19 +3,21 @@ Kiwi is an E-commerce application where people can buy or sell products.
 
 ## Table of Contents
 - [How To Use](#how-to-use)
-- [NPM Used](#npm-used)
+- [Links](#links)
 - [Screenshots](#screenshots)
+- [Areas of Growth](#areas-of-growth)
 - [Credits](#credits)
 - [License](#license)
-- [Features](#features)
 
 ## How To Use
-When you go to the home page, you will see a galle
+When you go to the home page, you can click on the department page. From there, select the department and view the items available. 
 
-## NPM Used
-The NPM package used is Cloudinary which allows all images to be uniformed. 
+## Links
 
 ## Screenshots
+
+## Areas of Growth
+We will continue to configure functionality of the site to streamline the user experience. Once that's completed, we will develop the seller side the application allowing consumers to use Kiwi to sell products.
 
 ## Credits
 - Ashquinn Gordon https://github.com/Ashquinn
