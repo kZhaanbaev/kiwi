@@ -3,26 +3,25 @@ const loginFormHandler = async (event) => {
   
     // Collect values from the login form
     //Make sure to add proper classes to handlebars file in order to make a proper query
-    const email = document.querySelector('#email-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
+    const username = document.querySelector('#usernameLogin').value.trim();
+    const password = document.querySelector('#passwordLogin').value.trim();
+
   
-    if (email && password) {
-      const response = await fetch('/api/users/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        // If successful, redirect the browser to the homepage page
-        document.location.replace('/homepage');
+    if (username && password) {
+        document.location.replace('/');
+
+        const greeting = document.getElementById('welcome');
+        console.log(username.textContent)
+        let welcome = document.createElement('h2');
+        welcome.textContent = username.value;
+        greeting.appendChild(welcome);
       } else {
         alert(response.statusText);
       }
-    }
-  };
+};
+
   
-  const signupFormHandler = async (event) => {
+const signupFormHandler = async (event) => {
     event.preventDefault();
   
         //Make sure to add proper classes to handlebars file in order to make a proper query
@@ -44,14 +43,14 @@ const loginFormHandler = async (event) => {
         alert(response.statusText);
       }
     }
-  };
+};
   
-  document
+document
     //Make sure to add proper classes to handlebars file in order to make a proper query
-    .querySelector('.login-form')
+    .querySelector('.loginForm')
     .addEventListener('submit', loginFormHandler);
   
-  document
+document
     //Make sure to add proper classes to handlebars file in order to make a proper query
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
