@@ -1,11 +1,8 @@
-<div class="text-center">
-    <h2>
-        Login below.
-    </h2>
-</div>
+<div class="row justify-space-between-md">
+<div class="col-md-3">
+    <h2>Sign-up</h2>
+<form class="form signupForm">
 
-<div class="container col-md-6">
-<form>
   <div class="form-group">
     <label for="firstName">First Name</label>
     <input type="text" class="form-control" id="firstNameInput" placeholder="John">
@@ -20,12 +17,28 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="johndoe123@email.com">
+    <input type="email" class="form-control" id="emailInput" placeholder="johndoe123@email.com">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Sign-up</button>
+</form>
+</div>
+
+<div class="col-md-3">
+    <h2>Login</h2>
+<form class="form loginForm">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="usernameLogin" placeholder="johngetsdoe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
   </div>
   <button type="submit" class="btn btn-primary">Login</button>
 </form>
+</div>
 </div>
