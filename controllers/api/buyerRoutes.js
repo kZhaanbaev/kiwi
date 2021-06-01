@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Buyer } = require('../../models');
+const { Buyer, Item, BuyerItem } = require('../../models');
 
 router.get('/', async(req, res) => {
     try{
@@ -13,3 +13,4 @@ router.get('/', async(req, res) => {
 
 
 module.exports = router;
+

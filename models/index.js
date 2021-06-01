@@ -11,7 +11,6 @@ Item.belongsTo(Department, {
     foreignKey: 'department_id'
 });
 
-
 Item.belongsToMany(Buyer, {
     through: {
         model: BuyerItem,
