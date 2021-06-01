@@ -4,11 +4,7 @@ const { BuyerItem, Buyer, Item } = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const buyerItems = await BuyerItem.findAll({
-            include: [
-                {
-                    model: Item
-                }
-            ]
+            include: [{model: Item, through: BuyerItem, as: 'buyer_item'}]
         });
         return res.status(200).json({ buyerItems });
     } catch (err) {

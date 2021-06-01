@@ -12,23 +12,23 @@ Item.belongsTo(Department, {
 });
 
 
-// Item.belongsToMany(Buyer, {
-//     through: {
-//         through: BuyerItem,
-//         unique: false
-//     },
-//     as: 'item_buyer'
-// });
+Item.belongsToMany(Buyer, {
+    through: {
+        model: BuyerItem,
+        unique: false
+    },
+    as: 'item_buyer',
+    foreignKey: 'buyer_id'
+});
 
 Buyer.belongsToMany(Item, {
     through: {
         model: BuyerItem,
         unique: false
     },
-    as: 'buyer_item'
+    as: 'buyer_item',
+    foreignKey: 'buyer_id'
 });
-
-
 
 
 module.exports = { Buyer, Item, Department, BuyerItem };
