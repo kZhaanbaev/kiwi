@@ -4,13 +4,13 @@ const router = require('express').Router();
 const departmentRoutes = require('./departmentRoutes');
 const buyerRoutes = require('./buyerRoutes');
 const itemRoutes = require('./itemRoutes');
-//const buyerItemRoutes = require('./buyerItemRoutes');
+// const buyerItemRoutes = require('./buyerItemRoutes');
 
 // router.use('/users', userRoutes);
 // router.use('/projects', projectRoutes);
 router.use('/departments', departmentRoutes);
 router.use('/buyers', buyerRoutes);
 router.use('/items', itemRoutes);
-//router.use('/buyeritems', buyerItemRoutes);
+// router.use('/buyeritems', buyerItemRoutes);
 
 module.exports = router;
