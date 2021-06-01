@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Department } = require('../../models');
+const { Buyer } = require('../../models');
 
 router.get('/', async(req, res) => {
     try{
-        const departments = await Department.findAll();
-        return res.status(200).json({departments});
+        const buyers = await Buyer.findAll();
+        return res.status(200).json({buyers});
     }catch (err){
         return res.status(500).send(err);
     }

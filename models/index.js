@@ -4,25 +4,31 @@ const Department = require('./Department');
 const BuyerItem = require('./BuyerItem');
 
 Department.hasMany(Item, {
-  foreignKey: 'department_id'
+    foreignKey: 'department_id'
 });
 
 Item.belongsTo(Department, {
-  foreignKey: 'department_id'
+    foreignKey: 'department_id'
 });
 
-Item.belongsToMany(Buyer, {
-  through: BuyerItem,
-  as: 'buyer_item',
-  foreignKey: 'id'
-});
+
+// Item.belongsToMany(Buyer, {
+//     through: {
+//         through: BuyerItem,
+//         unique: false
+//     },
+//     as: 'item_buyer'
+// });
 
 Buyer.belongsToMany(Item, {
-  through: BuyerItem,
-  as: 'buyer_item',
-  foreignKey: 'id'
+    through: {
+        model: BuyerItem,
+        unique: false
+    },
+    as: 'buyer_item'
 });
 
 
 
-module.exports = {Buyer, Item, Department, BuyerItem};
+
+module.exports = { Buyer, Item, Department, BuyerItem };
